@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.news {
+    &__card{
+        background-color: $light;
+        padding: 20px;
+        margin-bottom: 10px;
+        &-description {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+    }
+}

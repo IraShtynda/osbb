@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.header {
+    background-color: $accent;
+    height: 60px;
+
+    &__logo {
+        height: 50px;
+        padding-left: 40px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $light;
+
+        ul {
+            font-size: 24px;
+            font-family: $title_font;
+            font-weight: 700;
+
+            li {
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        gap: 10px;
+        padding: 10px 40px 10px;
+        align-items: center;
+        background-color: $dark;
+
+        img {
+            height: 40px;
+        }
+    }
+}

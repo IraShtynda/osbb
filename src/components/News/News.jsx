@@ -5,11 +5,11 @@ import { useState } from 'react';
 
 const News = () => {
     const [isCompleted, setIsCompleted] = useState(true)
-    const [index, setIndex] = useState(2)
+    const [index, setIndex] = useState(3)
     const initialNews = news.slice(0, index);
 
     const loadMore = () => {
-        setIndex(index + 2)
+        setIndex(index + 3)
         if (index >= news.length - index) {
             setIsCompleted(false)
         }
